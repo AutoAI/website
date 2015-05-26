@@ -1,12 +1,28 @@
+/* Whole Page */
 body {
   padding-top: 70px;
 }
 
 section {
-    padding-top: 60px;
+    padding: 60px;
 }
 
+/* Navbar */
+
+/* About Section */
 #about {
     padding-top: 0px;
 }
 
+/* Progress Section */
+#progress {
+    background: #4C4C4C;
+}
+
+#progress h2, #progress p {
+    color: white;
+}
+
+/* Community Section */
+
+/* Contribution Section */
