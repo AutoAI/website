@@ -1,156 +1,18 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-  <meta charset="UTF-8" />
-  <title>Particleground demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- remember, jQuery is completely optional -->
-  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
-  <script type='text/javascript' src='assets/js/particles.js'></script>
-
-</head>
-
-<body>
-
-<div id="particles-js">
-  <div class="count-particles">
-        <p> hi </p>
-  </div>
-</div>
-
-<script type="text/javascript"> 
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-</script>
-
-</body>
-</html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="DriveAI researches autonomous vehicle technology for public benefit">
-        <meta name="author" content="DriveAI">
         <title>DriveAI Autonomous Vehicle Research</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="DriveAI">
         <link href="assets/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type='text/javascript' src='assets/js/particles.js'></script>
+        <meta name="description" content="DriveAI researches autonomous vehicle technology for public benefit">
     </head>
-    <body data-spy="scroll" data-offset="0" data-target="#navbar">
+    <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -169,64 +31,63 @@ particlesJS("particles-js", {
                         <li><a href="#community">Community</a></li>
                         <li><a href="#contribute">Contribute</a></li>
                     </ul>
-                    
                 </div>
             </div>
         </nav>
-
-        <div id ="particles" name = "progress">
-            <div>
-            <div id="trans" name="about">
-                    <h1>DriveAI</h1>
-                    <p>Self Driving Cars make the world a much safer place for everyone. Learn more about our research and community below</p>
-                    <p><strong>Let's change the world.</strong></p>
+        <div id="particles-js">
+            <div class="count-particles">
+                <section id="about" name="about">
+                    <div class=".container">
+                        <div class="jumbotron">
+                            <h1>DriveAI</h1>
+                            <p>Self Driving Cars make the world a much safer place for everyone. Learn more about our research and community below</p>
+                            <p><strong>Let's change the world.</strong></p>
+                        </div>
+                    </div>
+                </section>
+                <section id="progress" name="progress">
+                    <div class=".container">
+                        <h2>Progress</h2>
+                        <img>
+                        <p>Akin write a thingy about our progress</p>
+                        <a href="progress.html" class="btn btn-lg btn-danger">Learn more about our progress</a>
+                    </div>
+                </section>
+                <section id="community" name="community">
+                    <h2>Community</h2>
+                    <img>
+                    <p>Welcome to the team! Yes, you read that correctly. We can only do so much as individuals. Progress and innovation requires a collection of bright minds. That's where you come in. How can you provide your expertise? Well, you have a few cool options and certainly aren't limited to one. Engage with your heart's desire.</p>
+                    <h3>Attend our Meetup events</h3>
+                    <p>We hold them monthly and working to increase the frequency. There you can mingle with other talented people, speak with the DriveAI guys, indulge in some food & drinks, and much more!</p>
+                    <h3>Visit our Github Page</h3>
+                    <p>Here we have challenges that need to be solved and welcome all to take a stab at it. This is also where you can see a lot of the guts of the operation and what will make this car actually move on its own.</p>
+                    <h3>Start a DriveAI Student Org at Your School</h3>
+                    <p>This is an opportunity to assemble a squad of your own and work on aspect of the project and encourage the autonomous vehicle space with projects of your own. All you have to do is send us an email at community@driveai.org</p>
+                    <p>If you have any ideas, questions, suggestions, or anything else don't hesitate to reach out to us.</p>
+                    <a class="btn btn-lg btn-danger">Learn more about our community</a>
+                </section>
+                <section id="contribute" name="contribute">
+                    <h2>Contribute</h2>
+                    <img>
+                    <p>Your donations fund our operations and help us buy the equipment we need. Without you, there is no self-driving car. Let's rise and carve out a new space of innovation. We're creating a new technological physique modeled after nothing we've seen before.</p>
+                    <h3>TAX INFORMATION</h3>
+                    <p>ALL DONATIONS ARE PROCESSED IN U.S. DOLLARS.</p>
+                    <p>All donations are tax-deductible in the United States. ‘DriveAI’ is a New Jersey Non-Profit Corporation organized in accordance with Internal Revenue Code Section 501(c)(3). Annual tax receipts are sent to donors within the current year via email or mail by January 31 each year.</p>
+                    <p>Not For Sale values and respects our donors’ privacy and treats all financial information about your transaction as strictly confidential. We use donor and constituent personal information such as name, mailing address and email address for purposes of donor acknowledgement and/or our internal mailing lists. We do not share donors’ or constituents’ personal contact information with any third-party organizations or third-party mailing lists for solicitation purposes.</p>
+                    button
+                    <h3>OTHER WAYS TO GIVE</h3>
+                    <p>Send a check to
+                        DriveAI
+                        555 HeyNow St.
+                        Somerset, NJ 08873
+                        Give us a call
+                        555-555-5555
+                        Send us an email giving@driveai.org
+                    </p>
+                    <a class="btn btn-lg btn-danger">Learn more about ways to contribute</a>
+                </section>
             </div>
-
-            <div id="trans1" name="about">
-                    <h1>DriveAI</h1>
-                    <p>Self Driving Cars make the world a much safer place for everyone. Learn more about our research and community below</p>
-                    <p><strong>Let's change the world.</strong></p>
-            </div>
-
-
-        <section class="trans" name="community">
-            <h2>Community</h2>
-            <img>
-            <p>Welcome to the team! Yes, you read that correctly. We can only do so much as individuals. Progress and innovation requires a collection of bright minds. That's where you come in. How can you provide your expertise? Well, you have a few cool options and certainly aren't limited to one. Engage with your heart's desire.</p>
-            <h3>Attend our Meetup events</h3>
-            <p>We hold them monthly and working to increase the frequency. There you can mingle with other talented people, speak with the DriveAI guys, indulge in some food & drinks, and much more!</p>
-            <h3>Visit our Github Page</h3>
-            <p>Here we have challenges that need to be solved and welcome all to take a stab at it. This is also where you can see a lot of the guts of the operation and what will make this car actually move on its own.</p>
-            <h3>Start a DriveAI Student Org at Your School</h3>
-            <p>This is an opportunity to assemble a squad of your own and work on aspect of the project and encourage the autonomous vehicle space with projects of your own. All you have to do is send us an email at community@driveai.org</p>
-            <p>If you have any ideas, questions, suggestions, or anything else don't hesitate to reach out to us.</p>
-            <a class="btn btn-lg btn-danger">Learn more about our community</a>
-        </section>  </div>        </div>
-
-        <section class="trans" name="contribute">
-            <h2>Contribute</h2>
-            <img>
-            <p>Your donations fund our operations and help us buy the equipment we need. Without you, there is no self-driving car. Let's rise and carve out a new space of innovation. We're creating a new technological physique modeled after nothing we've seen before.</p>
-            <h3>TAX INFORMATION</h3>
-            <p>ALL DONATIONS ARE PROCESSED IN U.S. DOLLARS.</p>
-            <p>All donations are tax-deductible in the United States. ‘DriveAI’ is a New Jersey Non-Profit Corporation organized in accordance with Internal Revenue Code Section 501(c)(3). Annual tax receipts are sent to donors within the current year via email or mail by January 31 each year.</p>
-            <p>Not For Sale values and respects our donors’ privacy and treats all financial information about your transaction as strictly confidential. We use donor and constituent personal information such as name, mailing address and email address for purposes of donor acknowledgement and/or our internal mailing lists. We do not share donors’ or constituents’ personal contact information with any third-party organizations or third-party mailing lists for solicitation purposes.</p>
-            button
-            <h3>OTHER WAYS TO GIVE</h3>
-            <p>Send a check to
-                DriveAI
-                555 HeyNow St.
-                Somerset, NJ 08873
-                Give us a call
-                555-555-5555
-                Send us an email giving@driveai.org
-            </p>
-            <a class="btn btn-lg btn-danger">Learn more about ways to contribute</a>
         </div>
-    </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script type='text/javascript' src='assets/js/demo.js'></script>
+        <script type="text/javascript" src="assets/js/particleconfig.js"></script>
     </body>
 </html>
- --> -->
