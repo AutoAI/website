@@ -1,9 +1,12 @@
 /* Whole Page */
 body {
   background: #16a085;
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 50px;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: "Avenir Next", sans-serif;
+
 }
+
+
 
 canvas {
   display: block;
@@ -37,6 +40,26 @@ canvas {
   background-color: transparent;
   color: white;
   height: 100vh;
+  vertical-align: middle;
+
+
+}
+
+#community .container{
+  background-color: transparent;
+}
+
+#about .container .jumbotron{
+  text-align: center;
+  position: relative;
+  top: 25%;
+ 
+}
+
+.btn-danger{
+  background-color: gray;
+  border-color: gray;
+
 }
 
 
@@ -44,6 +67,7 @@ canvas {
     border-radius: 0;
     background-color: inherit;
 }
+
 
 
 
