@@ -18,32 +18,7 @@ canvas {
   height: 100%;#4C4C4C 
   background-color: green;
 }
-#hi {
-  background: black;
-}
-/* ---- stats.js ---- */
 
-.count-particles{
-  background: transparent;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height:100%;
-  font-size: .8em;
-  text-align: left;
-  
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-#about {
-    padding-top: 0px;
-}
-
-.jumbotron {
-    background-color: #fff;
-}
 
 /* Progress Section */
 #progress {
