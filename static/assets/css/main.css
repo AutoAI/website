@@ -15,8 +15,8 @@ canvas {
 #particles-js {
   position: fixed;
   width: 100%;
-  height: 100%;
-  background-color: #b61924;
+  height: 100%;#4C4C4C 
+  background-color: green;
 }
 #hi {
   background: black;
@@ -36,6 +36,22 @@ canvas {
   padding-bottom: 2px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
+}
+#about {
+    padding-top: 0px;
+}
+
+.jumbotron {
+    background-color: #fff;
+}
+
+/* Progress Section */
+#progress {
+    background: transparent;
+}
+
+#progress h2, #progress p {
+    color: white;
 }
 
 /* Community Section */
