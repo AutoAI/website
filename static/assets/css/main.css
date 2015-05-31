@@ -5,6 +5,9 @@ body {
   padding-top: 50px;
 }
 
+html {
+  overflow:hide;
+}
 canvas {
   display: block;
   vertical-align: bottom;
@@ -45,7 +48,9 @@ canvas {
     background-color: inherit;
 }
 
-
+.count-particles {
+    overflow: scroll;
+}
 
 
 
