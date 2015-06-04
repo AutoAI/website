@@ -5,6 +5,9 @@ body {
   padding-top: 50px;
 }
 
+html {
+  overflow:hide;
+}
 canvas {
   display: block;
   vertical-align: bottom;
@@ -21,25 +24,35 @@ canvas {
 
 
 /* Progress Section */
-#progress {
-    background: transparent;
-}
 
-#progress h2, #progress p {
-    color: white;
-}
 .container {
+    background-color: white;
     max-width: none;
     padding: 0;
 }
 
-.container .jumbotron {
-    border-radius: 0;
+.jumbotron{
+  max-height: none;
+  padding: 0;
 }
 
-section .container {
-    padding: 25px;
+#about .container{
+  background-color: transparent;
+  color: white;
+  height: 100vh;
 }
+
+
+.container .jumbotron {
+    border-radius: 0;
+    background-color: inherit;
+}
+
+.count-particles {
+    overflow: scroll;
+}
+
+
 
 /* Community Section */
 
