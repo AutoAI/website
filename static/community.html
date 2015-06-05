@@ -64,13 +64,17 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	    <script>
 			function initialize() {
-				var mapCanvas = document.getElementById('map-canvas');
 				var mapOptions = {
-					center: new google.maps.LatLng(44.5403, -78.5463),
-					zoom: 8,
+					center: new google.maps.LatLng(31.4874825,-2.8810899),
+					zoom: 2,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
-				var map = new google.maps.Map(mapCanvas, mapOptions)
+				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(40.566201,-74.5998399),
+					map: map,
+					title: 'Click to zoom'
+				});
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
