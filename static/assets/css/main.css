@@ -41,6 +41,9 @@ body {
 #joinus, #satelite, #stayintouch {
 	padding:20px 0 20px 0;
 }
+#satelite {
+	padding-bottom:50px;
+}
 #map-canvas {
 	height:450px;
 }
