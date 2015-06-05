@@ -32,16 +32,16 @@ canvas {
 }
 
 .jumbotron{
-  max-height: none;
-  padding: 0;
+	max-height: none;
+	padding: 0;
 }
 
 #about .container{
-  background-color: transparent;
-  color: white;
-  height: 100vh;
+	background-color: transparent;
+	color: white;
+	padding:225px 0 225px 0;
+	text-align:center;
 }
-
 
 .container .jumbotron {
     border-radius: 0;
