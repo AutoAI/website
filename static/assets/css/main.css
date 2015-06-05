@@ -25,9 +25,6 @@ canvas {
 
 
 /* Progress Section */
-#progress * {
-	z-index:100;
-}
 
 .container {
     background-color: white;
