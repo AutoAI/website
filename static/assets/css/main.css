@@ -3,14 +3,20 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-canvas {
-	display: block;
-	vertical-align: bottom;
-}
 #rest {
 	background:white;
 }
 
+/* Home page */
+#about {
+	padding:225px 0 225px 0;
+	text-align:center;
+}
+#about, #about h1 {
+	color:white;
+}
+
+/* Progress section */
 #progress {
 	padding-top:25px;
 }
@@ -27,13 +33,5 @@ canvas {
 .paras {
 	color:#7a7a7a;
 	font-weight:normal;
-}
-
-#about {
-	padding:225px 0 225px 0;
-	text-align:center;
-}
-#about, #about h1 {
-	color:white;
 }
 
