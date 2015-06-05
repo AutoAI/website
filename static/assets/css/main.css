@@ -40,9 +40,9 @@ canvas {
 #about .container{
 	background-color: transparent;
 	color: white;
-	height: 100vh;
+	padding:225px 0 225px 0;
+	text-align:center;
 }
-
 
 .container .jumbotron {
     border-radius: 0;
