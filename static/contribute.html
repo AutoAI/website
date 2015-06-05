@@ -55,6 +55,40 @@
 		<div id="contribute-financially">
 			<div class="row text-center">
 				<h2>Financially</h2>
+				<div class="large-6 medium-6 small-12 columns">
+					<form action="" method="POST" id="payment-form">
+						<span class="payment-errors"></span>
+						<div class="row">
+							<div class="large-8 medium-8 small-8 columns">
+								<label>
+									<span>Card Number</span>
+									<input type="text" size="20" data-stripe="number"/>
+								</label>
+							</div>
+							<div class="large-4 medium-4 small-4 columns">
+								<label>
+									<span>CVC</span>
+									<input type="text" size="4" data-stripe="cvc"/>
+								</label>
+							</div>
+						</div>
+
+						<div class="row collapse">
+							<label>Expiration (MM/YYYY)</label>
+							<div class="large-5 medium-5 small-5 columns">
+								<input type="text" size="2" data-stripe="exp-month"/>
+							</div>
+							<div class="large-2 medium-2 small-2 columns">
+								<span> / </span>
+							</div>
+							<div class="large-5 medium-5 small-5 columns">
+								<input type="text" size="4" data-stripe="exp-year"/>
+							</div>
+						</div>
+
+						<button type="submit">Submit Payment</button>
+					</form>
+				</div>
 			</div>
 		</div>
 
