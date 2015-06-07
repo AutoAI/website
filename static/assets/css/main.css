@@ -3,6 +3,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* area of homepage underneeth particles.js */
 #rest {
 	background:white;
 }
@@ -21,7 +22,7 @@ body {
 	padding-top:25px;
 }
 
-/* ---- particles.js container ---- */
+/* The Cool Particles Thing */
 #particles-js {
 	position: fixed;
 	width: 100%;
@@ -30,7 +31,7 @@ body {
 	z-index:-1;
 }
 
-.paras {
+.secondary-text {
 	color:#7a7a7a;
 	font-weight:normal;
 }
@@ -47,4 +48,3 @@ body {
 #map-canvas {
 	height:450px;
 }
-
