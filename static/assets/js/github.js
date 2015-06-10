@@ -25,7 +25,7 @@ function setProgressBarsAndTitles(data) {
     $("#progress-bar-parent").append(
 		'<div class="row">' +
 			'<div class="large-6 medium-6 small-12 columns">' +
-				'<a href="' + data.html_url + '">' + data.title + '</a><br/>' +
+				'<h5><a href="' + data.html_url + '">' + data.title + '</a></h5>' +
 				'<span>Open Issues: ' + data.open_issues + ', </span><span> Closed Issues: ' + data.closed_issues + '</span>' +
 				'<div class="progress success radius">' +
 						'<span class="meter" style="width:' + percentageComplete + '%"></span>' +
