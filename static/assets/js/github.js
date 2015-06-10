@@ -18,7 +18,10 @@ function getJSONForMilestone(element, index, array) {
 
 function setProgressBarsAndTitles(data) {
 	var totalIssues = data.open_issues + data.closed_issues;
-	var percentageComplete = data.closed_issues / totalIssues;
+	var percentageComplete = (totalIssues == 0)
+		? 0
+		: data.closed_issues / totalIssues
+	;
     $("#progress-bar-parent").append(
 		'<div class="row">' +
 			'<div class="large-6 medium-6 small-12 columns">' +
