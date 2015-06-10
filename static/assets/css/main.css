@@ -54,12 +54,8 @@ body {
 }
 .update {
 	border-radius:.25em;
-	box-shadow:0 0 .9em #bbb;
+	box-shadow:0 0 .6em #CDCDCD;
 	margin-bottom:1.25em;
 	padding-top:1em;
-}
-.update:hover {
-	box-shadow:0 0 1.5em #333;
-	cursor:pointer;
 }
 
