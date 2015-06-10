@@ -28,6 +28,6 @@ function setProgressBarsAndTitles(data){
 			'<div class="large-6 medium-6 small-12 columns">' +
 				'<span>' + data.description + '</span>' +
 			'</div>' +
-		'</div>'
+		'</div>' + '<hr/>'
     );
 }
