@@ -70,7 +70,7 @@
 									I could have written about the perception system here, but I chose not to for two main reasons.
 									One, because I don't really know whats going on with that and don't even know how to bs about it.
 									And secondly, and perhaps simplest, webdev is cooler, hands down. That's right Travis. You and all your algorithms, think you're so damn cool, don't you.
-									Well webdev is cooler.
+									Well webdev is cooler. <a>Show Less</a>
 								</p>
 							</div>
 						</div>
@@ -90,6 +90,11 @@
 				var endToCutOff = "... ";
 				$(".toggle-text").each(function() {
 					var content = $(this).html();
+
+					if (content.length > numCharsToShow) {
+						var subcontent = content.substr(0, numCharsToShow);
+						var shortenedPara = '<p>';
+					}
 				});
 			});
         </script>
