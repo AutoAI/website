@@ -16,13 +16,15 @@ function getJSONForMilestone(element, index, array) {
     });
 }
 
-function setProgressBarsAndTitles(data){
+function setProgressBarsAndTitles(data) {
+	var totalIssues = data.open_issues + data.closed_issues;
+	var percentageComplete = data.closed_issues / totalIssues;
     $("#progress-bar-parent").append(
 		'<div class="row">' +
 			'<div class="large-6 medium-6 small-12 columns">' +
 				'<a href="' + data.html_url + '">' + data.title + '</a>' +
 				'<div class="progress success radius">' +
-						'<span class="meter" style="width:10%"></span>' +
+						'<span class="meter" style="width:' + percentageComplete + '%"></span>' +
 				'</div>' +
 			'</div>' +
 			'<div class="large-6 medium-6 small-12 columns">' +
