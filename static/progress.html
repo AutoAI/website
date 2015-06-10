@@ -33,12 +33,92 @@
 			</section>
 		</nav>
         <div class="row" id="progress-intro">
-            
+			<div class="large-12 medium-12 small-12 columns">
+            	<h3>Progress</h3>
+            	<p>We're on a mission to make autonomous vehicles a reality...</p>
+			</div>
         </div>
-        <script src="assets/js/github.js"></script>
+        <div class="row">
+			<div class="large-12 medium-12 small-12 columns">
+				<ul class="tabs" data-tab>
+				  <li class="tab-title active"><a href="#panel1">Goals</a></li>
+				  <li class="tab-title"><a href="#panel2">Updates</a></li>
+				</ul>
+				<div class="tabs-content">
+					<div class="content active" id="panel1">
+						<div class="row">
+							<div id="progress-bar-parent" class="large-12 medium-12 small-12 columns">
+								<div class="row hide-for-small">
+									<div class="large-6 medium-6 columns">
+										<span>Info</span>
+									</div>
+									<div class="large-6 medium-6 columns">
+										<span>Description</span>
+									</div>
+									<hr/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content" id="panel2">
+						<div class="row update">
+							<div class="large-12 medium-12 small-12 columns">
+								<h4>May 2015</h4>
+								<h5>Website</h5>
+								<p class="toggle-text">
+									This month we started doing a lot of work on the restructuring of our website and hope to have a full launch of the new site by next month.
+									I could have written about the perception system here, but I chose not to for two main reasons.
+									One, because I don't really know whats going on with that and don't even know how to bs about it.
+									And secondly, and perhaps simplest, webdev is cooler, hands down. That's right Travis. You and all your algorithms, think you're so damn cool, don't you.
+									Well webdev is cooler.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
+        <script src="assets/js/github.js"></script>
+        <script>
+			$(document).ready(function() {
+				$(document).foundation();
+				var numCharsToShow = 200;
+				var endToCutOff = "... ";
+
+				$(".toggle-text").each(function() {
+					var content = $(this).html();
+					var fullText = $(this);
+
+					if (content.length > numCharsToShow) {
+						var subcontent = content.substr(0, numCharsToShow);
+
+						var shortenedPara = $(document.createElement("p"));
+						shortenedPara.append(subcontent + endToCutOff);
+						$(this).parent().append(shortenedPara);
+
+						var showMoreLink = $(document.createElement("a"));
+						$(showMoreLink).append("Show More");
+						$(showMoreLink).on("click", function() {
+							$(this).parent().toggle();
+							$(fullText).toggle();
+						});
+						$(shortenedPara).append(showMoreLink);
+						$(this).toggle();
+
+						var showLessLink = $(document.createElement("a"));
+						$(showLessLink).append("Show Less");
+						$(showLessLink).on("click", function() {
+							$(this).parent().toggle();
+							$(shortenedPara).toggle();
+						});
+						$(this).append(showLessLink);
+					}
+				});
+			});
+        </script>
 	</body>
 </html>

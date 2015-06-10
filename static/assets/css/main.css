@@ -48,3 +48,14 @@ body {
 #map-canvas {
 	height:450px;
 }
+
+#progress-intro {
+	padding-top:20px;
+}
+.update {
+	border-radius:.25em;
+	box-shadow:0 0 .6em #CDCDCD;
+	margin-bottom:1.25em;
+	padding-top:1em;
+}
+
