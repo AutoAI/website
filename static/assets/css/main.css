@@ -58,4 +58,7 @@ body {
 	margin-bottom:1.25em;
 	padding-top:1em;
 }
+.icon-links {
+	list-style-type:none;
+}
 
