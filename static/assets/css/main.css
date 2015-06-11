@@ -58,4 +58,20 @@ body {
 	margin-bottom:1.25em;
 	padding-top:1em;
 }
+#social-media {
+	background:#4c4c4c;
+}
+.icon-links {
+	list-style-type:none;
+}
+#social-media h3 {
+	color:white;
+}
+.icon-links li {
+	display:inline-block;
+	padding:0 15px 0 15px;
+}
+.icon-links a {
+	color:white;
+}
 
