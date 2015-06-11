@@ -61,4 +61,8 @@ body {
 .icon-links {
 	list-style-type:none;
 }
+.icon-links li {
+	display:inline-block;
+	padding:0 10px 0 10px;
+}
 
