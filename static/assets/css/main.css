@@ -65,4 +65,7 @@ body {
 	display:inline-block;
 	padding:0 15px 0 15px;
 }
+.icon-links a {
+	color:#333;
+}
 
