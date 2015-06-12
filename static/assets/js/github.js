@@ -28,7 +28,7 @@ function setProgressBarsAndTitles(data) {
 				'<h5><a href="' + data.html_url + '">' + data.title + '</a></h5>' +
 				'<span>Open Issues: ' + data.open_issues + ', </span><span> Closed Issues: ' + data.closed_issues + '</span>' +
 				'<div class="progress success radius">' +
-						'<span class="meter" style="width:' + percentageComplete + '%"></span>' +
+						'<span class="meter" style="width:' + percentageComplete*100 + '%"></span>' +
 				'</div>' +
 			'</div>' +
 			'<div class="large-6 medium-6 small-12 columns">' +
