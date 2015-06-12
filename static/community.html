@@ -36,18 +36,32 @@
 
 		<div id="joinus">
 			<div class="row text-center">
-				<div class="large-6 medium-6 small-12 columns">
-					<h1>Join Our Community</h1>
-				</div>
-				<div class="large-6 medium-6 small-12 columns">
-					<img alt="IMAGE"/>
-				</div>
+			<h1>The DriveAI Squad</h1>
 			</div>
 		</div>
 
 		<div id="satelite">
 			<div class="row text-center">
-				<h1>Find a Satelite or Create Your Own</h1>
+				<h2>Attend our events or create your own</h2>
+				<div class="row secondary-text">
+					<div class="large-4 medium-4 small-12 columns">
+						<h4><a href="http://www.meetup.com/Self-Driving-Vehicle/">Attend our Meetup events</a></h4>
+						<p>We hold them monthly and working to increase the frequency. There you can mingle with other talented people, speak with the DriveAI guys, indulge in some food & drinks, and much more!</p>
+					</div>
+					<div class="large-4 medium-4 small-12 columns">
+						<h4><a href="https://github.com/DriveAI">Visit our Github Page</a></h4>
+						<p>
+							Here we have challenges that need to be solved and welcome all to take a stab at it. 
+							This is also where you can see a lot of the guts of the operation and what will make this car actually move on its own.
+						</p>
+					</div>
+					<div class="large-4 medium-4 small-12 columns">
+						<h4><a href="mailto://community@driveai.org">Create your own Squad</a></h4>
+						<p>
+							This is an opportunity to assemble a squad of your own and work on aspect of the project and encourage the autonomous vehicle space with projects of your own. All you have to do is send us an email at <a href="mailto://community@driveai.org">community@driveai.org</a>
+						</p>
+					</div>
+				</div>
 				<div class="large-12 medium-12 small-12 columns">
 					<div id="map-canvas"></div>
 				</div>
@@ -86,7 +100,12 @@
 					zoom: 2,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
-				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
+				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(40.566201,-74.5998399),
+					map: map,
+					title: 'Click to zoom'
+				});	
 				var marker = new google.maps.Marker({
 					position: new google.maps.LatLng(40.566201,-74.5998399),
 					map: map,
