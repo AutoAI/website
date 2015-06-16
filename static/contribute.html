@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>DriveAI Autonomous Vehicle Research</title>
@@ -182,7 +182,6 @@
 				});
 			});
 			function stripeResponseHandler(status, response) {
-				console.log(response);
 				var $form = $('#payment-form');
 			
 				if (response.error) {
@@ -195,6 +194,7 @@
 					// Insert the token into the form so it gets submitted to the server
 					$form.append($('<input type="hidden" name="stripeToken" />').val(token));
 					// and submit
+
 					$form.get(0).submit();
 				}
 			};
