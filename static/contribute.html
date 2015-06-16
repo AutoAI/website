@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/main.css"/>
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 	</head>
 	<body>
 		<nav class="top-bar" data-topbar>
@@ -156,6 +157,38 @@
 			</div>
 		</footer>
 
+		<script type="text/javascript">
+			Stripe.setPublishableKey('pk_test_lxfAzFnAoZylR42k0PB75sxD');
+			jQuery(function($) {
+			  $('#payment-form').submit(function(event) {
+				var $form = $(this);
+
+				// Disable the submit button to prevent repeated clicks
+				$form.find('button').prop('disabled', true);
+
+				Stripe.card.createToken($form, stripeResponseHandler);
+
+				// Prevent the form from submitting with the default action
+				return false;
+			  });
+			});
+			function stripeResponseHandler(status, response) {
+			  var $form = $('#payment-form');
+
+			  if (response.error) {
+				// Show the errors on the form
+				$form.find('.payment-errors').text(response.error.message);
+				$form.find('button').prop('disabled', false);
+			  } else {
+				// response contains id and card, which contains additional card details
+				var token = response.id;
+				// Insert the token into the form so it gets submitted to the server
+				$form.append($('<input type="hidden" name="stripeToken" />').val(token));
+				// and submit
+				$form.get(0).submit();
+			  }
+			};
+		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
