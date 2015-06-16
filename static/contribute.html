@@ -143,7 +143,17 @@
 				</div>
 			</div>
 		</footer>
-		<script type="text/javascript">
+
+		<div id="processingModal" class="reveal-modal text-center" data-reveal data-options="close_on_background_click:false;close_on_esc:false">
+			<h2>Processing...</h2>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.reveal.min.js"></script>
+		<script type="text/javascript" src="assets/js/driveai.js"></script>
+		<script>
 			Stripe.setPublishableKey('pk_test_lxfAzFnAoZylR42k0PB75sxD');
 			jQuery(function($) {
 				$('#payment-form').submit(function(event) {
@@ -151,7 +161,7 @@
 			
 					// Disable the submit button to prevent repeated clicks
 					$form.find('button').prop('disabled', true);
-			
+					showModal();
 					Stripe.card.createToken($form, stripeResponseHandler);
 			
 					// Prevent the form from submitting with the default action
@@ -174,10 +184,13 @@
 					$form.get(0).submit();
 				}
 			};
+			//$("#processingModal").foundation("reveal", "open");
+			function showModal() {
+				$("#processingModal").foundation("reveal", "open");
+			}
+			function dismissModal() {
+				$("#processingModal").foundation("reveal", "close");
+			}
 		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
-		<script type="text/javascript" src="assets/js/driveai.js"></script>
 	</body>
 </html>
