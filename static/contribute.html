@@ -82,15 +82,23 @@
 						</div>
 
 						<div class="row collapse">
-							<label>Expiration (MM/YYYY)</label>
-							<div class="large-5 medium-5 small-5 columns">
-								<input type="text" size="2" data-stripe="exp-month"/>
+							<div class="large-6 medium-6 small-12 columns">
+								<div class="row">
+									<label>Expiration (MM/YYYY)</label>
+									<div class="large-5 medium-5 small-5 columns">
+										<input type="text" size="2" data-stripe="exp-month"/>
+									</div>
+									<div class="large-1 medium-1 small-1 columns">
+										<span> / </span>
+									</div>
+									<div class="large-6 medium-6 small-6 columns">
+										<input type="text" size="4" data-stripe="exp-year"/>
+									</div>
+								</div>
 							</div>
-							<div class="large-2 medium-2 small-2 columns">
-								<span> / </span>
-							</div>
-							<div class="large-5 medium-5 small-5 columns">
-								<input type="text" size="4" data-stripe="exp-year"/>
+							<div class="large-6 medium-6 small-12 columns">
+								<label>Amount</label>
+								<input type="text" name="amount"/>
 							</div>
 						</div>
 
