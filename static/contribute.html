@@ -55,7 +55,7 @@
 					</p>
 				</div>
 				<div class="large-6 medium-6 small-12 columns">
-					<form action="" method="POST" id="payment-form">
+					<form action="/process_payment" method="POST" id="payment-form">
 						<span class="payment-errors"></span>
 						<div class="row">
 							<div class="large-6 medium-6 small-6 columns">
@@ -182,6 +182,7 @@
 				});
 			});
 			function stripeResponseHandler(status, response) {
+				console.log(response);
 				var $form = $('#payment-form');
 			
 				if (response.error) {
@@ -197,7 +198,6 @@
 					$form.get(0).submit();
 				}
 			};
-			//$("#processingModal").foundation("reveal", "open");
 			function showModal() {
 				$("#processingModal").foundation("reveal", "open");
 			}
