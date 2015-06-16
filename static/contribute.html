@@ -70,13 +70,13 @@
 							<div class="large-8 medium-8 small-8 columns">
 								<label>
 									<span>Card Number</span>
-									<input type="text" size="20" data-stripe="number"/>
+									<input type="text" size="20" data-stripe="number" required/>
 								</label>
 							</div>
 							<div class="large-4 medium-4 small-4 columns">
 								<label>
 									<span>CVC</span>
-									<input type="text" size="4" data-stripe="cvc"/>
+									<input type="text" size="4" data-stripe="cvc" required/>
 								</label>
 							</div>
 						</div>
@@ -86,19 +86,19 @@
 								<div class="row">
 									<label>Expiration (MM/YYYY)</label>
 									<div class="large-5 medium-5 small-5 columns">
-										<input type="text" size="2" data-stripe="exp-month"/>
+										<input type="text" size="2" data-stripe="exp-month" required/>
 									</div>
 									<div class="large-1 medium-1 small-1 columns">
 										<span> / </span>
 									</div>
 									<div class="large-6 medium-6 small-6 columns">
-										<input type="text" size="4" data-stripe="exp-year"/>
+										<input type="text" size="4" data-stripe="exp-year" required/>
 									</div>
 								</div>
 							</div>
 							<div class="large-6 medium-6 small-12 columns">
 								<label>Amount</label>
-								<input type="text" name="amount"/>
+								<input type="text" name="amount" required/>
 							</div>
 						</div>
 
