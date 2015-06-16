@@ -2,5 +2,5 @@
 	path = Tools
 	url = https://github.com/Parth-mehrotra/Tools.git
 [submodule "stripe-python"]
-	path = stripe-python
+	path = stripe
 	url = git@github.com:stripe/stripe-python.git
