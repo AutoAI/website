@@ -20,11 +20,6 @@ handlers:
   static_files: static/\1
   upload: static/(.*\.js)
 
-- url: /(.*\.m4v)
-  mime_type: video/m4v
-  static_files: static/\1
-  upload: static/(.*\.m4v)
-
 # image files
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
   static_files: static/\1
@@ -35,4 +30,5 @@ handlers:
   static_files: static/index.html
   upload: static/index.html
 
-- url:
+- url: /process_payment
+  script: process_payment.app
