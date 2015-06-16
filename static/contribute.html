@@ -22,7 +22,6 @@
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
-
 				</ul>
 				<ul class="left">
 					<li class="divider"></li>
@@ -34,7 +33,6 @@
 				</ul>
 			</section>
 		</nav>
-
 		<div id="contribute">
 			<div class="row text-center">
 				<h1>Contribute</h1>
@@ -43,17 +41,17 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="row"><hr/></div>
-
+		<div class="row">
+			<hr/>
+		</div>
 		<div id="contribute-research">
 			<div class="row text-center">
 				<h2>Our Research</h2>
 			</div>
 		</div>
-		
-		<div class="row"><hr/></div>
-
+		<div class="row">
+			<hr/>
+		</div>
 		<div id="contribute-financially">
 			<div class="row text-center">
 				<h2>Financially</h2>
@@ -69,18 +67,17 @@
 						<div class="row">
 							<div class="large-8 medium-8 small-8 columns">
 								<label>
-									<span>Card Number</span>
-									<input type="text" size="20" data-stripe="number"/>
+								<span>Card Number</span>
+								<input type="text" size="20" data-stripe="number"/>
 								</label>
 							</div>
 							<div class="large-4 medium-4 small-4 columns">
 								<label>
-									<span>CVC</span>
-									<input type="text" size="4" data-stripe="cvc"/>
+								<span>CVC</span>
+								<input type="text" size="4" data-stripe="cvc"/>
 								</label>
 							</div>
 						</div>
-
 						<div class="row collapse">
 							<div class="large-6 medium-6 small-12 columns">
 								<div class="row">
@@ -101,21 +98,19 @@
 								<input type="text" name="amount"/>
 							</div>
 						</div>
-
 						<button type="submit">Submit Payment</button>
 					</form>
 				</div>
 			</div>
 		</div>
-
-		<div class="row"><hr/></div>
-
+		<div class="row">
+			<hr/>
+		</div>
 		<div id="contribute-community">
 			<div class="row text-center">
 				<h2>Join Our Community</h2>
 			</div>
 		</div>
-
 		<footer>
 			<div id="social-media">
 				<div class="row text-center">
@@ -131,37 +126,36 @@
 				</div>
 			</div>
 		</footer>
-
 		<script type="text/javascript">
 			Stripe.setPublishableKey('pk_test_lxfAzFnAoZylR42k0PB75sxD');
 			jQuery(function($) {
-			  $('#payment-form').submit(function(event) {
-				var $form = $(this);
-
-				// Disable the submit button to prevent repeated clicks
-				$form.find('button').prop('disabled', true);
-
-				Stripe.card.createToken($form, stripeResponseHandler);
-
-				// Prevent the form from submitting with the default action
-				return false;
-			  });
+				$('#payment-form').submit(function(event) {
+					var $form = $(this);
+			
+					// Disable the submit button to prevent repeated clicks
+					$form.find('button').prop('disabled', true);
+			
+					Stripe.card.createToken($form, stripeResponseHandler);
+			
+					// Prevent the form from submitting with the default action
+					return false;
+				});
 			});
 			function stripeResponseHandler(status, response) {
-			  var $form = $('#payment-form');
-
-			  if (response.error) {
-				// Show the errors on the form
-				$form.find('.payment-errors').text(response.error.message);
-				$form.find('button').prop('disabled', false);
-			  } else {
-				// response contains id and card, which contains additional card details
-				var token = response.id;
-				// Insert the token into the form so it gets submitted to the server
-				$form.append($('<input type="hidden" name="stripeToken" />').val(token));
-				// and submit
-				$form.get(0).submit();
-			  }
+				var $form = $('#payment-form');
+			
+				if (response.error) {
+					// Show the errors on the form
+					$form.find('.payment-errors').text(response.error.message);
+					$form.find('button').prop('disabled', false);
+				} else {
+					// response contains id and card, which contains additional card details
+					var token = response.id;
+					// Insert the token into the form so it gets submitted to the server
+					$form.append($('<input type="hidden" name="stripeToken" />').val(token));
+					// and submit
+					$form.get(0).submit();
+				}
 			};
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
