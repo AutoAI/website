@@ -37,3 +37,14 @@ function dismissModal() {
 	$("#processingModal").foundation("reveal", "close");
 }
 
+function processPayment(token, amount) {
+	var x = new XMLHttpRequest();
+	x.open("POST", "/process_payment.py?stripeToken=" + token + "&amount=" + amount);
+	x.onreadystatechange = function() {
+		if (x.readyState == 4 && x.status == 200) {
+			// var txt = x.responseText;
+		}
+	};
+	x.send();
+}
+
