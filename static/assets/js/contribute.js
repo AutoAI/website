@@ -43,8 +43,15 @@ function processPayment(token, amount) {
 	x.onreadystatechange = function() {
 		if (x.readyState == 4 && x.status == 200) {
 			// var txt = x.responseText;
+			// Process the text, whatever you make it, whether its a number or JSON formatted text
+			// Then if its all good, call showThankYou()
+			// If not, close the modal and handle the error
 		}
 	};
 	x.send();
+}
+
+function showThankYou() {
+	$("#modalHeading").html("Thank you");
 }
 
