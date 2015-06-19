@@ -1,5 +1,5 @@
 
-Stripe.setPublishableKey('pk_test_lxfAzFnAoZylR42k0PB75sxD');
+Stripe.setPublishableKey('pk_test_WlBCggCT9kHOZZ1kordWvyTD');
 jQuery(function($) {
 	$('#payment-form').submit(function(event) {
 		var $form = $(this);
