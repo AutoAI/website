@@ -1,9 +1,10 @@
 import webapp2
 import stripe
+import secret_keys_that_should_never_be_versioned
 
 class Payment_Processing(webapp2.RequestHandler):
 	def post(self):
-		stripe.api_key = "sk_test_eHsQUr5Aie80HMkJem3HVP1Z"
+		stripe.api_key = secret_keys_that_should_never_be_versioned.stripe
 		token = self.request.get("stripeToken")
 		amount = self.request.get("amount")
 
