@@ -7,6 +7,8 @@ class Payment_Processing(webapp2.RequestHandler):
 		stripe.api_key = secret_keys_that_should_never_be_versioned.stripe
 		token = self.request.get("stripeToken")
 		amount = self.request.get("amount")
+		
+		print(token, amount)
 
 		try:
 			charge = stripe.Charge.create(
