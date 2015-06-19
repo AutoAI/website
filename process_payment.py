@@ -15,9 +15,9 @@ class Payment_Processing(webapp2.RequestHandler):
 				description="desc"
 			)
 		except stripe.CardError, e:
-			self.response.status("204")
+			self.response.status("400")
 			pass
-		self.response.status("400")
+		self.response.status("204")
 
 app = webapp2.WSGIApplication([
 	('/process_payment', Payment_Processing),

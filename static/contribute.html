@@ -136,8 +136,27 @@
 		<div id="contribute-community">
 			<div class="row text-center">
 				<h2>Join Our Community</h2>
-				<div class="large-12 medium-12 small-12 columns">
-					<p>We are proud of our community and encourage anyone to join and contribute.</p>
+				<div class="large-4 medium-4 small-12 columns">
+					<h3>Join and Contribute</h3>
+					<p>
+						Imagine the all-star squad you want when you need to to have business handled. Now stop imagining and look at DriveAI. 
+						We’re a collection of all-star squads that know nothing, but how to get the job done. We’ve got unreasonable goals with insane timelines. 
+						All that’s needed is the team crazy enough to do it. Are you up to the task? Then join us.
+					</p>
+				</div>
+				<div class="large-4 medium-4 small-12 columns">
+					<h3>Donate</h3>
+					<p>
+						When you give to DriveAI, you become an enabler. 
+						Your generous financial gifts help fund our research and create the technology that will propel our society forward. You make the difference.
+					</p>
+				</div>
+				<div class="large-4 medium-4 small-12 columns">
+					<h3>Attend Events</h3>
+					<p>
+						The first step is to sign up to our upcoming events where they’ll be food & drinks, amazing guests, and a chance to meet the team. 
+						There, you’ll learn more about how you can help. All are welcome!
+					</p>
 				</div>
 			</div>
 		</div>
@@ -158,7 +177,7 @@
 		</footer>
 
 		<div id="processingModal" class="reveal-modal text-center" data-reveal data-options="close_on_background_click:false;close_on_esc:false">
-			<h2>Processing...</h2>
+			<h2 id="modalHeading">Processing...</h2>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -166,45 +185,6 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.reveal.min.js"></script>
 		<script type="text/javascript" src="assets/js/driveai.js"></script>
-		<script>
-			Stripe.setPublishableKey('pk_test_lxfAzFnAoZylR42k0PB75sxD');
-			jQuery(function($) {
-				$('#payment-form').submit(function(event) {
-					var $form = $(this);
-			
-					// Disable the submit button to prevent repeated clicks
-					$form.find('button').prop('disabled', true);
-					showModal();
-					Stripe.card.createToken($form, stripeResponseHandler);
-			
-					// Prevent the form from submitting with the default action
-					return false;
-				});
-			});
-
-			function stripeResponseHandler(status, response) {
-				var $form = $('#payment-form');
-			
-				if (response.error) {
-					// Show the errors on the form
-					$form.find('.payment-errors').text(response.error.message);
-					$form.find('button').prop('disabled', false);
-				} else {
-					// response contains id and card, which contains additional card details
-					var token = response.id;
-					// Insert the token into the form so it gets submitted to the server
-					$form.append($('<input type="hidden" name="stripeToken" />').val(token));
-					// and submit
-
-					$form.get(0).submit();
-				}
-			};
-			function showModal() {
-				$("#processingModal").foundation("reveal", "open");
-			}
-			function dismissModal() {
-				$("#processingModal").foundation("reveal", "close");
-			}
-		</script>
+		<script type="text/javascript" src="assets/js/contribute.js"></script>
 	</body>
 </html>
