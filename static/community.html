@@ -101,13 +101,38 @@
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
 				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-				var marker = new google.maps.Marker({
+				var office = new google.maps.Marker({
 					position: new google.maps.LatLng(40.566201,-74.5998399),
 					map: map,
 					title: 'Click to zoom'
 				});	
-				var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(40.566201,-74.5998399),
+				var juicetank = new google.maps.Marker({
+					position: new google.maps.LatLng(40.536595,-74.52272),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var eqspace = new google.maps.Marker({
+					position: new google.maps.LatLng(40.736706,-74.175327),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var rutgers = new google.maps.Marker({
+					position: new google.maps.LatLng(40.4981667,-74.4473481),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var mellow = new google.maps.Marker({
+					position: new google.maps.LatLng(-33.916666700000000000,19.133333300000004000),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var praful = new google.maps.Marker({
+					position: new google.maps.LatLng(37.386251,-122.066865),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var nick = new google.maps.Marker({
+					position: new google.maps.LatLng(42.278044,-83.738224),
 					map: map,
 					title: 'Click to zoom'
 				});
