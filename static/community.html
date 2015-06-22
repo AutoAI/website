@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DriveAI Autonomous Vehicle Research</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="DriveAI researches autonomous vehicle technology for public benefit"/>
+		<meta name="author" content="DriveAI"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/main.css"/>
+	</head>
+	<body>
+		<nav class="top-bar" data-topbar>
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="/">DriveAI</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+			<section class="top-bar-section">
+				<ul class="right">
+
+				</ul>
+				<ul class="left">
+					<li class="divider"></li>
+					<li><a href="progress.html">Progress</a></li>
+					<li class="divider"></li>
+					<li><a href="community.html">Community</a></li>
+					<li class="divider"></li>
+					<li><a href="contribute.html">Contribute</a></li>
+				</ul>
+			</section>
+		</nav>
+
+		<div id="joinus">
+			<div class="row text-center">
+			<h1>The DriveAI Squad</h1>
+			</div>
+		</div>
+
+		<div id="satelite">
+			<div class="row text-center">
+				<h2>Attend our events or create your own</h2>
+				<div class="row secondary-text">
+					<div class="large-4 medium-4 small-12 columns">
+						<h4><a href="http://www.meetup.com/Self-Driving-Vehicle/">Attend our Meetup events</a></h4>
+						<p>We hold them monthly and working to increase the frequency. There you can mingle with other talented people, speak with the DriveAI guys, indulge in some food & drinks, and much more!</p>
+					</div>
+					<div class="large-4 medium-4 small-12 columns">
+						<h4><a href="https://github.com/DriveAI">Visit our Github Page</a></h4>
+						<p>
+							Here we have challenges that need to be solved and welcome all to take a stab at it. 
+							This is also where you can see a lot of the guts of the operation and what will make this car actually move on its own.
+						</p>
+					</div>
+					<div class="large-4 medium-4 small-12 columns">
+						<h4><a href="mailto:community@driveai.org">Create your own Squad</a></h4>
+						<p>
+							This is an opportunity to assemble a squad of your own and work on aspect of the project and encourage the autonomous vehicle space with projects of your own. All you have to do is send us an email at <a href="mailto:community@driveai.org">community@driveai.org</a>
+						</p>
+					</div>
+				</div>
+				<div class="large-12 medium-12 small-12 columns">
+					<div id="map-canvas"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="stayintouch">
+			<div class="row text-center">
+				<div class="large-12 medium-12 small-12 columns">
+					<h1>Stay In Touch!</h1>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="social-media">
+				<div class="row text-center">
+					<div class="large-12 medium-12 small-12 columns">
+						<h3>Stay Connected</h3>
+						<ul class="icon-links text-center">
+							<li><a href="https://twitter.com/Drive_AI"><i class="fa fa-twitter fa-3x"></i></a></li>
+							<li><a href="https://instagram.com/drive_ai/"><i class="fa fa-instagram fa-3x"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/driveai?trk=ppro_cprof"><i class="fa fa-linkedin fa-3x"></i></a></li>
+							<li><a href="https://github.com/DriveAI"><i class="fa fa-github fa-3x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+	    <script>
+			function initialize() {
+				var mapOptions = {
+					center: new google.maps.LatLng(31.4874825,-2.8810899),
+					zoom: 2,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+				var office = new google.maps.Marker({
+					position: new google.maps.LatLng(40.566201,-74.5998399),
+					map: map,
+					title: 'Click to zoom'
+				});	
+				var juicetank = new google.maps.Marker({
+					position: new google.maps.LatLng(40.536595,-74.52272),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var eqspace = new google.maps.Marker({
+					position: new google.maps.LatLng(40.736706,-74.175327),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var rutgers = new google.maps.Marker({
+					position: new google.maps.LatLng(40.4981667,-74.4473481),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var mellow = new google.maps.Marker({
+					position: new google.maps.LatLng(-33.916666700000000000,19.133333300000004000),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var praful = new google.maps.Marker({
+					position: new google.maps.LatLng(37.386251,-122.066865),
+					map: map,
+					title: 'Click to zoom'
+				});
+				var nick = new google.maps.Marker({
+					position: new google.maps.LatLng(42.278044,-83.738224),
+					map: map,
+					title: 'Click to zoom'
+				});
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
+		<script type="text/javascript" src="assets/js/driveai.js"></script>
+	</body>
+</html>
