@@ -1,11 +1,12 @@
 <DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>DriveAI Autonomous Vehicle Research</title>
+		<title>DriveAI Autonomous Vehicle Research | Somerset, NJ</title>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta name="description" content="DriveAI researches autonomous vehicle technology for public benefit"/>
+		<meta name="description" content="DriveAI researches autonomous vehicle technology for public benefit. Located in Somerset, NJ."/>
+		<meta name="keywords" content="DriveAI,contribute,donate,support,help,research,community,autonomous,vehicle"/>
 		<meta name="author" content="DriveAI"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -59,25 +60,25 @@
 						<span class="payment-errors"></span>
 						<div class="row">
 							<div class="large-6 medium-6 small-6 columns">
-								<label>Name</label>
-								<input type="text" name="name" placeholder="John Smith"/>
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" placeholder="John Smith"/>
 							</div>
 							<div class="large-6 medium-6 small-6 columns">
-								<label>Email</label>
-								<input type="text" name="email" placeholder="johnsmith@example.com"/>
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" placeholder="johnsmith@example.com"/>
 							</div>
 						</div>
 						<div class="row">
 							<div class="large-8 medium-8 small-8 columns">
 								<label>
-									<span>Card Number</span>
-									<input type="text" size="20" data-stripe="number" placeholder="1234 0000 5678 9000" required/>
+									<span for="cardnumber">Card Number</span>
+									<input type="text" id="cardnumber" size="20" data-stripe="number" placeholder="1234 0000 5678 9000" required/>
 								</label>
 							</div>
 							<div class="large-4 medium-4 small-4 columns">
 								<label>
 									<span>CVC</span>
-									<input type="text" size="4" data-stripe="cvc" placeholder="123" required/>
+									<input type="text" size="4" maxlength="4" data-stripe="cvc" placeholder="123" required/>
 								</label>
 							</div>
 						</div>
@@ -86,29 +87,29 @@
 								<div class="row">
 									<label>Expiration (MM/YYYY)</label>
 									<div class="large-5 medium-5 small-5 columns">
-										<input type="text" size="2" data-stripe="exp-month" placeholder="06" required/>
+										<input type="text" size="2" maxlength="2" data-stripe="exp-month" placeholder="06" required/>
 									</div>
 									<div class="large-1 medium-1 small-1 columns">
 										<span> / </span>
 									</div>
 									<div class="large-6 medium-6 small-6 columns">
-										<input type="text" size="4" data-stripe="exp-year" placeholder="2019" required/>
+										<input type="text" size="4" maxlength="4" data-stripe="exp-year" placeholder="2019" required/>
 									</div>
 								</div>
 							</div>
 							<div class="large-6 medium-6 small-12 columns">
-								<label>Amount</label>
+								<label for="amount">Amount</label>
 								<div class="row collapse">
 									<div class="large-2 medium-2 small-2 columns">
-										<label class="prefix">$</label> 
+										<label class="prefix" for="amount">$</label> 
 									</div>
 									<div class="large-10 medium-10 small-10 columns">
-										<input type="text" name="amount" required/>
+										<input type="text" name="amount" id="amount" required/>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button type="submit">Submit Payment</button>
+						<button type="submit" class="button radius">Submit Payment</button>
 					</form>
 				</div>
 			</div>
