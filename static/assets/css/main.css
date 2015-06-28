@@ -52,12 +52,7 @@ body {
 #progress-intro {
 	padding-top:20px;
 }
-.update {
-	border-radius:.25em;
-	box-shadow:0 0 .6em #CDCDCD;
-	margin-bottom:1.25em;
-	padding-top:1em;
-}
+
 #social-media {
 	background:#4c4c4c;
 }
@@ -75,3 +70,13 @@ body {
 	color:white;
 }
 
+#progress-section {
+	background: #f2f2f2;
+	margin-top: 20px;
+	max-width: none;
+	padding: 20px 50px;
+}
+
+.progress {
+	border: 1px solid #43AC6A;
+}
