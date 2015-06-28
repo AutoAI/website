@@ -64,7 +64,7 @@ body {
 .icon-links {
 	list-style-type:none;
 }
-#social-media h3 {
+#social-media h3, #social-media p {
 	color:white;
 }
 .icon-links li {
