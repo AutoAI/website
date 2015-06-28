@@ -24,14 +24,14 @@ function setProgressBarsAndTitles(data) {
 	;
     $("#progress-bar-parent").append(
 		'<div class="row">' +
-			'<div class="large-12 medium-6 small-12 columns">' +
+			'<div class="large-12 medium-12 small-12 columns">' +
 				'<h5><a href="' + data.html_url + '">' + data.title + '</a></h5>' +
 				'<span>Open Issues: ' + data.open_issues + ', </span><span> Closed Issues: ' + data.closed_issues + '</span>' +
 				'<div class="progress success radius">' +
 						'<span class="meter" style="width:' + percentageComplete*100 + '%"></span>' +
 				'</div>' +
 			'</div>' +
-			'<div class="large-12 medium-6 small-12 columns">' +
+			'<div class="large-12 medium-12 small-12 columns">' +
 				'<span>' + data.description + '</span>' +
 			'</div>' +
 		'</div>' + '<hr/>'
