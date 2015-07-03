@@ -27,6 +27,10 @@ body {
 	padding-top:25px;
 }
 
+#topcol {
+	padding-top: 35px;
+}
+
 /* The Cool Particles Thing */
 #particles-js {
 	position: fixed;
