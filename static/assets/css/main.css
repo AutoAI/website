@@ -1,6 +1,11 @@
 /* Whole Page */
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
+}
+
+.nav-active {
+	background:#777 !important;
+	font-weight:bold !important;
 }
 
 /* area of homepage underneeth particles.js */
@@ -22,12 +27,16 @@ body {
 	padding-top:25px;
 }
 
+#topcol {
+	padding-top: 35px;
+}
+
 /* The Cool Particles Thing */
 #particles-js {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color:#4c4c4c;
+	background-color:#4DB8B8;
 	z-index:-1;
 }
 
@@ -52,19 +61,14 @@ body {
 #progress-intro {
 	padding-top:20px;
 }
-.update {
-	border-radius:.25em;
-	box-shadow:0 0 .6em #CDCDCD;
-	margin-bottom:1.25em;
-	padding-top:1em;
-}
+
 #social-media {
 	background:#4c4c4c;
 }
 .icon-links {
 	list-style-type:none;
 }
-#social-media h3 {
+#social-media h3, #social-media p {
 	color:white;
 }
 .icon-links li {
@@ -75,3 +79,13 @@ body {
 	color:white;
 }
 
+#progress-section {
+	background: #f2f2f2;
+	margin-top: 20px;
+	max-width: none;
+	padding: 20px 50px;
+}
+
+.progress {
+	border: 1px solid #43AC6A;
+}
