@@ -1,91 +1,70 @@
-/* Whole Page */
-body {
-	font-family: 'Muli', sans-serif;
+html {
+	font-family: 'Raleway', sans-serif;
 }
 
-.nav-active {
-	background:#777 !important;
-	font-weight:bold !important;
+nav {
+	background-color: #404040;
 }
 
-/* area of homepage underneeth particles.js */
-#rest {
-	background:white;
+#logo {
+	width: 155px;
+	height: 30px;
+	margin-top: 17px;
 }
 
-/* Home page */
-#about {
-	padding:225px 0 225px 0;
-	text-align:center;
-}
-#about, #about h1 {
-	color:white;
-}
-
-/* Progress section */
-#progress {
-	padding-top:25px;
-}
-
-#topcol {
-	padding-top: 35px;
-}
-
-/* The Cool Particles Thing */
-#particles-js {
-	position: fixed;
+#landing_page {
 	width: 100%;
-	height: 100%;
-	background-color:#4DB8B8;
-	z-index:-1;
+	height: auto;
 }
 
-.secondary-text {
-	color:#7a7a7a;
-	font-weight:normal;
+#landing_body {
+	height: 500px;
+	color: #FFFFFF;
+	background-color: #25A4E0;
 }
 
-#satelite {
-	background:#f2f2f2;
-}
-#joinus, #satelite, #stayintouch {
-	padding:20px 0 20px 0;
-}
-#satelite {
-	padding-bottom:50px;
-}
-#map-canvas {
-	height:450px;
+#landing_title {
+	padding-left: 50px;
+	padding-top: 50px;
+	float: none;
+	color: #FFFFFF;
+	font-size: 36pt;
+	font-weight: 100;
+	text-align: center;
 }
 
-#progress-intro {
-	padding-top:20px;
+#landing_subtitle {
+	color: #FFFFFF;
+	font-size: 12pt;
+	text-align: center;
 }
 
-#social-media {
-	background:#4c4c4c;
-}
-.icon-links {
-	list-style-type:none;
-}
-#social-media h3, #social-media p {
-	color:white;
-}
-.icon-links li {
-	display:inline-block;
-	padding:0 15px 0 15px;
-}
-.icon-links a {
-	color:white;
+.parallax-container {
+	overflow: inherit;
 }
 
-#progress-section {
-	background: #f2f2f2;
-	margin-top: 20px;
-	max-width: none;
-	padding: 20px 50px;
+.card-content {
+	color: #000000;
 }
 
-.progress {
-	border: 1px solid #43AC6A;
+.card .card-action a {
+	color: #f66a5f;
+}
+
+footer.page-footer {
+	background-color: #404040
+}
+
+.link {
+	color: #25A4E0;
+}
+
+.sm_link {
+	height: 30px;
+	width: 30px;
+}
+
+.sm_link_wrapper {
+	padding-right: 10px;
+	display: inline;
 }
