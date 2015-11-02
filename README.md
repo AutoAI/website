@@ -1,4 +1,4 @@
-DriveAI [http://driveai.org]
+[DriveAI](http://driveai.org)
 =======
 
 DriveAI is a research team in New Jersey that's working on making autonomous vehicles a reality.
