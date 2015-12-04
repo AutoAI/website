@@ -1,6 +1,6 @@
 site_name: DriveAI
 pages:
 - Home: index.md
-- News: news.md
+- Updates: updates.md
 - Getting Started: getting-started.md
 theme: flatly
