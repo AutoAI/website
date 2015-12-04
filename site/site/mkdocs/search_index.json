@@ -2,48 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "DriveAI\n\n\nDriveAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're bringing the community together to understand and build autonomous vehicles in an open way.\n\n\nOur Vision\n\n\nOur goal as an organization is to hold regular meetings to discuss developments in vehicle autonomy, create resources for the general public to learn about vehicle autonomy, and build guides to help hobbyists and entrepreneurs development with autonomous vehicle development. We'll know we accomplished this when anybody can become comfortable and up-to-date enough with autonoumous vehicles to build their own.\n\n\nWhat We Do\n\n\nMore filler text #7\n\n\n867 299 682 316", 
             "title": "Home"
         }, 
         {
-            "location": "/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
+            "location": "/#driveai", 
+            "text": "DriveAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're bringing the community together to understand and build autonomous vehicles in an open way.  Our Vision  Our goal as an organization is to hold regular meetings to discuss developments in vehicle autonomy, create resources for the general public to learn about vehicle autonomy, and build guides to help hobbyists and entrepreneurs development with autonomous vehicle development. We'll know we accomplished this when anybody can become comfortable and up-to-date enough with autonoumous vehicles to build their own.  What We Do  More filler text #7  867 299 682 316", 
+            "title": "DriveAI"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
-        }, 
-        {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
-        }, 
-        {
-            "location": "/about/", 
-            "text": "At nec\n\n\nSua et pollice illo illa repugnat\n\n\nLorem markdownum discrimen, squalere avulsumque pars e sanguinis \nmoenia\n.\nPoenae iacit! Abest mollia terra \nvota\n secedere, aequora inminet, ad movit\ndestrinxit latentia tamen; refugitque. Numina vapor te cumulemus alternare quae\nparentes ducem prospiciunt, sunt! Latonam laborum\n\nstatione\n inde Ausoniis murmur\npocula exosae alta, silent cura, me nec modo trepidoque antrum in\n\ncentum\n.\n\n\n\n\nIam genis cervis exhalantem es postquam rerum\n\n\nPutabant indicat Actaeo disparibus vertice et locuta\n\n\nExtrema campos utraque figere\n\n\nConiugium lunaribus quae ibi victoria Sicula figurae\n\n\n\n\nVix manus adloquitur de quid demersit unde\n\n\nAncaeo sed Phrygia iurant Troiana. Mei arcumque post Pelethronium, nisi cum\nlatratibus Cecropidum nando et haut Scirone, it. Exempla auxilium omnes loco\nanser movet! Et regia cupidine si clivo generosam eras lecto origo, doli\ndempsistis parat iacebat biceps quas.\n\n\n\n\nVindicat coronantur manus\n\n\nQuos desunt gemit domus deducitur partim\n\n\nDicentem pariter mille premuntur queritur heres ingeniis\n\n\nIn secutum\n\n\nProspiciens aves ingenti tua\n\n\n\n\nEodem torsit attulit \nsalve\n: aequore, foret odisse aut arce fuit velut\nstabat. Spem in dis invitaque nec nostras Athenas suo \nvelat\n, blandas signatur\nmuris, grandine. Amplexus optas contermina; usque metalla.\n\n\nErat infelix poenam\n\n\nTegit fidis iuvenci cinctaque atque honores natamque vidit facinus tectura\nfesta, talia. Quo vertit, mens haec: latuitque deterruit \nniger Parthaone\n.\n\n\n\n\nIndotata nec petis\n\n\nTu aure volentem exploratis madefient supple parvas\n\n\nArma manus coniugium neve protentaque lucem aliis\n\n\nEt canum\n\n\nAlcmena curvamine coniunx verba avulsa papyriferi dederis\n\n\n\n\nLatet possunt optare, libatos \nvalida\net\n haeret \ncognata\npraeconia\n, qui. \nAtque\ncomplexa\n, cum ulterius rogum Aurora suum: pomum\nsorores Cereremque adlevet Poeantiaden igne quercus committere. Feci memorique a\n\nfigitur\n enim, tabe calathosque triticeas rigidis et Orneus terribilis. Modo\nab latronis Stygio et a minorem, paucaque tribulique terras et Troiana urbes,\nPelops \naetherios\n. Sontibus vidisset, monstrum, mentisque etiam: tristis amat\nquem Castore.\n\n\nIra discedentem sacris scitetur haruspex orbe utque nostra at tela, decepto:\nArcas alti venturi crimenque fit palude. Movet ibi fera \nvirum mihi\n peioris,\ningemuit, cervice dolor alatur posuit triplex, exstant! Duarum contactu coierunt\ntamen velamina: cedemus terrigenasque; si res contingit comas et remotis alii,\nqua algae totidemque. Comitante est Naryciusque ferus quidem liliaque ferri\nseris corpus, imago \nsuos\n ingens,\nanimae. Conplexae succensa illam certamina an \ningestoque\n mortales arte,\nintrarant proceres fuit \nquam\n fidissima inludens.", 
-            "title": "About"
-        }, 
-        {
-            "location": "/about/#at-nec", 
+            "location": "/news/", 
             "text": "", 
-            "title": "At nec"
+            "title": "News"
         }, 
         {
-            "location": "/about/#sua-et-pollice-illo-illa-repugnat", 
-            "text": "Lorem markdownum discrimen, squalere avulsumque pars e sanguinis  moenia .\nPoenae iacit! Abest mollia terra  vota  secedere, aequora inminet, ad movit\ndestrinxit latentia tamen; refugitque. Numina vapor te cumulemus alternare quae\nparentes ducem prospiciunt, sunt! Latonam laborum statione  inde Ausoniis murmur\npocula exosae alta, silent cura, me nec modo trepidoque antrum in centum .   Iam genis cervis exhalantem es postquam rerum  Putabant indicat Actaeo disparibus vertice et locuta  Extrema campos utraque figere  Coniugium lunaribus quae ibi victoria Sicula figurae", 
-            "title": "Sua et pollice illo illa repugnat"
-        }, 
-        {
-            "location": "/about/#vix-manus-adloquitur-de-quid-demersit-unde", 
-            "text": "Ancaeo sed Phrygia iurant Troiana. Mei arcumque post Pelethronium, nisi cum\nlatratibus Cecropidum nando et haut Scirone, it. Exempla auxilium omnes loco\nanser movet! Et regia cupidine si clivo generosam eras lecto origo, doli\ndempsistis parat iacebat biceps quas.   Vindicat coronantur manus  Quos desunt gemit domus deducitur partim  Dicentem pariter mille premuntur queritur heres ingeniis  In secutum  Prospiciens aves ingenti tua   Eodem torsit attulit  salve : aequore, foret odisse aut arce fuit velut\nstabat. Spem in dis invitaque nec nostras Athenas suo  velat , blandas signatur\nmuris, grandine. Amplexus optas contermina; usque metalla.", 
-            "title": "Vix manus adloquitur de quid demersit unde"
-        }, 
-        {
-            "location": "/about/#erat-infelix-poenam", 
-            "text": "Tegit fidis iuvenci cinctaque atque honores natamque vidit facinus tectura\nfesta, talia. Quo vertit, mens haec: latuitque deterruit  niger Parthaone .   Indotata nec petis  Tu aure volentem exploratis madefient supple parvas  Arma manus coniugium neve protentaque lucem aliis  Et canum  Alcmena curvamine coniunx verba avulsa papyriferi dederis   Latet possunt optare, libatos  valida\net  haeret  cognata\npraeconia , qui.  Atque\ncomplexa , cum ulterius rogum Aurora suum: pomum\nsorores Cereremque adlevet Poeantiaden igne quercus committere. Feci memorique a figitur  enim, tabe calathosque triticeas rigidis et Orneus terribilis. Modo\nab latronis Stygio et a minorem, paucaque tribulique terras et Troiana urbes,\nPelops  aetherios . Sontibus vidisset, monstrum, mentisque etiam: tristis amat\nquem Castore.  Ira discedentem sacris scitetur haruspex orbe utque nostra at tela, decepto:\nArcas alti venturi crimenque fit palude. Movet ibi fera  virum mihi  peioris,\ningemuit, cervice dolor alatur posuit triplex, exstant! Duarum contactu coierunt\ntamen velamina: cedemus terrigenasque; si res contingit comas et remotis alii,\nqua algae totidemque. Comitante est Naryciusque ferus quidem liliaque ferri\nseris corpus, imago  suos  ingens,\nanimae. Conplexae succensa illam certamina an  ingestoque  mortales arte,\nintrarant proceres fuit  quam  fidissima inludens.", 
-            "title": "Erat infelix poenam"
+            "location": "/getting-started/", 
+            "text": "", 
+            "title": "Getting Started"
         }
     ]
 }
