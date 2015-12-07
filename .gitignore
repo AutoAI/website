@@ -1,4 +1,1 @@
-*.swp
-*.swo
-*.pyc
-secret_keys_that_should_never_be_versioned.py
+*.DS_Store

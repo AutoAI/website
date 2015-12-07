@@ -1,30 +1,25 @@
-DriveAI [http://driveai.org]
-=======
+# Our website
 
-DriveAI is a research team in New Jersey that's working on making autonomous vehicles a reality.
+This is the repository for out website, if you take a look [here](https://github.com/DriveAI/Website/tree/markdownsite/site/docs), you'll see a bunch of markdown files. We're using a framework called [MkDocs](http://www.mkdocs.org/). It allows anyone on our team to quickly add information to our website. 
 
-Installation
-------------
-For sh: 
-```sh
-sh Tools/InstallScripts/install-google-app-engine.sh
+If you want to add info to the website you can do so simply by editing the markdown here and creating a pull request. If you want to download the framework itself you can simply execute the following commands.
+
+```
+ pip install mkdocs
 ```
 
-For zsh 
-```zsh
-zsh Tools/InstallScripts/install-google-app-engine.zsh
+Aaand you're done. Of course you need to have python & pip installed as well.
+
+From here you can do 
+
+```
+mkdocs serve
 ```
 
-Local Testing
---------------
+to serve the site locally. 
 
-```sh
-sh Tools/Utils/google-app-engine-local-python.sh
+```
+mkdocs build --clean 
 ```
 
-Deploy
-------
-
-```sh
-sh Tools/Utils/google-app-engine-deploy.sh
-```
+to clean (you need to do this sometimes, it should prompt you when it's required.
