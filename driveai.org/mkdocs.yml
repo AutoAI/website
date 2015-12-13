@@ -4,3 +4,4 @@ pages:
 - Updates: updates.md
 - Getting Started: getting-started.md
 theme: flatly
+site_favicon: favicon.png
