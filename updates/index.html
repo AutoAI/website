@@ -72,6 +72,11 @@
 
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
                 <li >
                     <a rel="next" href="..">
                         <i class="fa fa-arrow-left"></i> Previous
@@ -94,7 +99,9 @@
     
         <li class="main active"><a href="#updates">Updates</a></li>
         
-            <li><a href="#december-2015">December 2015</a></li>
+            <li><a href="#march-2016">March 2016</a></li>
+        
+            <li><a href="#january-2016">January 2016</a></li>
         
             <li><a href="#november-2015">November 2015</a></li>
         
@@ -105,14 +112,12 @@
 
 <h1 id="updates">Updates</h1>
 <p>If you're looking to stay up-to-date with our goals and progress, you've come to the right place.</p>
-<h3 id="december-2015">December 2015</h3>
-<h4 id="goals"><em>Goals</em></h4>
-<p>December is going to be another busy month for our student members with final exams approaching. We will, however, be holding a board meeting to discuss the direction we'll be taking in 2016. We'll also be reviewing our finances and creating a budget and presentation materials for another pitch to our primary sponsor, <a href="http://www.munichre.com/en/homepage/index.html">Munich Reinsurance</a>.</p>
+<h3 id="march-2016">March 2016</h3>
+<p>Last month we presented our ideas and goals to <a href="http://www.munichre.com/en/homepage/index.html">Munich Reinsurance</a>, who agreed to grant us funding for the second time. We've begun designing our next prototype, which will ideally consist of an actuated low-speed electric vehicle with lidar and software with a focus on localization. Low-speed electric vehicles and quality sensors tend to be cost-prohibitive, so we're launching a round of fundraising to help us realize our goal. We presently have the resources to build a vehicle, but not without sacrificing quality in some area of the design. A marginal amount of additional funding or a better deal on a significant expense should alleviate our constraints.</p>
+<h3 id="january-2016">January 2016</h3>
+<p>Over the winter, we spent some time exploring how we can both make the biggest difference in the coming year and move closer to our long-term goals. As we explored the idea of building an autonomous vehicle, we discovered that there was little information available to help us decide which sensors to purchase - in particular, we failed to find appropriate sample data from sensors (which would have allowed us to evaluate them for our needs or test data processing techniques). In addition, we had a discussion with the people at <a href="http://www.aurobots.com/">Auro Robotics</a>, who expressed the need for an open-source localization and mapping solution. As a result, we decided that releasing datasets and solving localization and mapping related problems will be our primary goals in the near future.</p>
 <h3 id="november-2015">November 2015</h3>
-<h4 id="goals_1"><em>Goals</em></h4>
-<p>In November we'll be taking the opportunity to get ourselves organized while many of our members are busy with classes. In particular, we're looking to streamline the process by which we onboard new members and get them involved. To do this we'll be launching a new website for information about our organization and another website for documention.</p>
-<h4 id="results"><em>Results</em></h4>
-<p>We launched the new website (the one you're viewing now), which will provide all the information people need to get up-to-date with our efforts. We also launched the documentation site <a href="http://docs.driveai.org">here</a>; documentation will be added continuously as our projects progress.</p></div>
+<p>In November we took the opportunity to get ourselves organized while many of our members are busy with classes. In particular, we streamlined the process by which we onboard new members and get them involved. As a part of this effort, we launched a new website for information about our organization (the one you're viewing now) and another website for documention <a href="http://docs.driveai.org">here</a>. Documentation will be added continuously as our projects progress.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -124,6 +129,33 @@
         <script src="../js/jquery-1.10.2.min.js"></script>
         <script src="../js/bootstrap-3.0.3.min.js"></script>
         <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
         <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

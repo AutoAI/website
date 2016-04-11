@@ -72,6 +72,11 @@
 
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
                 <li class="disabled">
                     <a rel="next" >
                         <i class="fa fa-arrow-left"></i> Previous
@@ -104,12 +109,14 @@
             <div class="col-md-9" role="main">
 
 <h1 id="driveai">DriveAI</h1>
-<p>DriveAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're bringing the community together to understand and build autonomous vehicles in an open way.</p>
+<p>DriveAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're a team of motivated engineers and students that are looking to bring the community together to understand and build autonomous vehicles.</p>
 <h3 id="the-vision">The Vision</h3>
-<p>Our goal as an organization is to hold regular meetings to discuss developments in vehicle autonomy, create resources for the general public to learn about vehicle autonomy, and build guides to help hobbyists and entrepreneurs development with autonomous vehicle development. We'll know we accomplished this when anybody can become comfortable and up-to-date enough with autonoumous vehicles to build their own.</p>
+<p>Our goal as an organization is to create resources for the general public to learn about vehicle autonomy, build guides to help hobbyists and entrepreneurs with autonomous vehicle development, and hold regular meetings to discuss developments in vehicle autonomy. We'll know we accomplished this when anybody can become comfortable and up-to-date enough with autonoumous vehicles to build their own.</p>
+<p>Our immediate goals include developing a minimal prototype and releasing sample datasets for sensors so that enthusiasts can develop processing techniques and evaluate sensor candidates without purchasing those sensors.</p>
 <h3 id="our-story">Our Story</h3>
-<p>Our first five members got together in Fall of 2014 because we were interested in the space and wanted to make a difference. By the following Spring, we had set up ourselves as a non-profit, and in May, we were funded by <a href="http://www.munichre.com/en/homepage/index.html">Munich Reinsurance</a> and really got started.</p>
-<p>This summer we built an autonomous go-kart which we affectionatley refer to as The Cockroach. It was built as a proof-of-concept to demonstrate simple path planning and software-hardware interation.</p></div>
+<p>Our first members got together during the fall of 2014 because we were interested in the space and wanted to make a difference. By the following spring, we had established ourselves as a non-profit, and in May, we were funded by <a href="http://www.munichre.com/en/homepage/index.html">Munich Reinsurance</a>.</p>
+<p>Over the summer of 2016, we built an autonomous go-kart which we affectionatley refer to as The Cockroach. It was built as a proof-of-concept to demonstrate simple path planning and software-hardware interation. We held two demonstrations of The Cockroach at Munich Reinsurance in Princeton, NJ and Bell Works in Homedel, NJ.</p>
+<p>This Spring, we received additional funding from Munich Reinsurance and we're looking to build a more robust system. We're still in the design phase at the moment, and because many of our design challenges are financial, we very much appreicate any contributions.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -121,6 +128,33 @@
         <script src="./js/jquery-1.10.2.min.js"></script>
         <script src="./js/bootstrap-3.0.3.min.js"></script>
         <script src="./js/highlight.pack.js"></script>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
         <script src="./js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
