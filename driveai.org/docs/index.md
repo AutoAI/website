@@ -1,6 +1,6 @@
-# DriveAI
+# AutoAI
 
-DriveAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're a team of motivated engineers and students that are looking to bring the community together to understand and build autonomous vehicles.
+AutoAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're a team of motivated engineers and students that are looking to bring the community together to understand and build autonomous vehicles.
 
 ### The Vision
 
